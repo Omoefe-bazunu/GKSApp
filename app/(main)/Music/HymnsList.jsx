@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   scrollContainer: {
-    paddingBottom: 30,
+    paddingBottom: 70,
     paddingHorizontal: 15,
   },
   hymnContainer: {

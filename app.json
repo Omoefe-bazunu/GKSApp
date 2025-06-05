@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "GKSApp",
-    "slug": "GKSApp",
+    "name": "Haven",
+    "slug": "Haven",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "gksapp",
+    "scheme": "haven",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.omoefe01.GKSApp"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +38,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d698610b-f4fd-44f9-acf8-3ba5b6375dde"
+      }
     }
   }
 }

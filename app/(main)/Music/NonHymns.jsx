@@ -1,14 +1,24 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, TouchableOpacity } from "react-native";
 import ThemedView from "../../../components/ThemedView";
 import ThemedText from "../../../components/ThemedText";
 import MainHeader from "../../../components/header";
-import Spacer from "../../../components/Spacer";
+import { useNavigation } from "@react-navigation/native";
+import { router } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
 
 const NonHymnsList = () => {
+  const navigation = useNavigation();
+
   return (
     <ThemedView safe style={[styles.safeArea, { flex: 1 }]}>
       <MainHeader />
-      <Spacer />
+      {/* Up arrow button - unchanged from your request */}
+      <TouchableOpacity
+        onPress={() => router.push("/Music")}
+        style={[styles.backButton, { marginHorizontal: 10, marginTop: 10 }]}
+      >
+        <Ionicons name="arrow-up" size={24} color="#fff" />
+      </TouchableOpacity>
       <ThemedView style={styles.container}>
         <ThemedText style={styles.title}>Oops!</ThemedText>
         <ThemedText style={styles.subTitle}>No Music here yet.</ThemedText>

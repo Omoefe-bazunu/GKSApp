@@ -6,7 +6,7 @@ import ThemedText from "./ThemedText";
 const MainHeader = () => {
   return (
     <ThemedView style={styles.container}>
-      <ThemedText style={styles.text}>GKSApp</ThemedText>
+      <ThemedText style={styles.text}>Haven</ThemedText>
       <Ionicons name="notifications" size={24} color="#6849a7" />
     </ThemedView>
   );
