@@ -1,0 +1,14 @@
+# Ignore system folders and cache
+**/node_modules
+**/.git
+**/.expo
+**/dist
+**/build
+**/.vscode
+**/.idea
+**/.DS_Store
+**/Thumbs.db
+**/AppData
+
+# Windows-specific system folder causing error
+**/AppData/Local/ElevatedDiagnostics
